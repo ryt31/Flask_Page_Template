@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-<h1>感情タグ</h1>
-<div>{{prediction}}</div>
-<h1>スコア</h1>
-<div>{{score}}</div>
+
+<body>
+    <h1 class="title">推定結果</h1>
+    </form>
+
+    <div class="container">
+        <form id="contact">
+            <h1 class="result">感情タグ = {{prediction}}</h1>
+            <h1 class="result">スコア = {{score}}</h1>
+        </form>
+    </div>
+</body>
 
 </html>

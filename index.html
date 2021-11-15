@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-<form action="/predict" method="POST" enctype="multipart/form-data">
-	<input type="text" name="sentence">
-	<input type="submit" value="送信">
-</form>
-<p class="aaa">aaa</p>
 
-<script type="text/javascript" src="{{ url_for('static', filename='static/css/style.css') }}"></script>
+<body>
+	<h1 class="title">感情推定</h1>
+	<div class="container">
+		<form id="contact" action="/predict" method="POST" enctype="multipart/form-data">
+			<h3>文章を入力してください</h3>
+			<fieldset>
+				<textarea type="text" name="sentence" placeholder="Type Here...." tabindex="5" required></textarea>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
 
 </html>
