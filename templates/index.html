@@ -9,9 +9,14 @@
 	<h1 class="title">感情推定</h1>
 	<div class="container">
 		<form id="contact" action="/predict" method="POST" enctype="multipart/form-data">
+			<h3>名前を入力してください</h3>
+			<fieldset>
+				<textarea type="text" name="name" placeholder="type your name" tabindex="1" required></textarea>
+			</fieldset>
 			<h3>文章を入力してください</h3>
 			<fieldset>
-				<textarea type="text" name="sentence" placeholder="Type Here...." tabindex="5" required></textarea>
+				<textarea type="text" name="sentence" placeholder="Type Sentence Here...." tabindex="5"
+					required></textarea>
 			</fieldset>
 			<fieldset>
 				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
